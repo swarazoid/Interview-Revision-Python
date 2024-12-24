@@ -1,0 +1,23 @@
+Single Responsibility Principle:
+A class should have only 1 reason to change
+
+
+Open/Closed Principle:
+A class is open for extension, but closed for modification
+
+
+Liskov Substitution Principle:
+If class B is a child of class A, then A's object should be replaceable by B's object without breaking code.
+Basically, subclass should extend the capability of parent class, not narrow it down.
+So, don't inherit and override a method to NotImplementedError.
+
+
+Interface Segregation Principle:
+Interfaces should be such that the class implementing it should not be needed to implement unnecessary functions.
+So, create as small interface as possible
+Python does not have interfaces, so abstract class is used instead.
+
+
+Dependency Inversion Principle:
+Class should depend on interface rather than concrete classes.
+Basically, try not to create objects inside the class, rather pass the object in the constructor. The passed class should follow an interface. The using class should refer to the methods in the interface for calling them.

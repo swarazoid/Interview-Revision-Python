@@ -1,0 +1,11 @@
+Functions: def my_function():
+
+Variables: my_variable
+
+Constants: MY_CONSTANT = 10
+
+Class: class CoolClass()
+
+Filename: my_module.py
+
+Package: mypackage
