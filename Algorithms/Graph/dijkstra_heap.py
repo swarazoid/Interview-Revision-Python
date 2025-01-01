@@ -1,3 +1,13 @@
+'''
+Dijkstra Algorithm is a graph algorithm for finding the shortest path from 
+a source node to all other nodes in a graph(single source shortest path).
+
+It is a type of greedy algorithm. It only works on weighted graphs with positive weights. 
+It has a time complexity of O(V^2) using the adjacency matrix representation of graph. 
+The time complexity can be reduced to O((V+E)logV) using adjacency list representation of graph,
+where E is the number of edges in the graph and V is the number of vertices in the graph.
+'''
+
 import heapq
 from math import inf
 
@@ -15,6 +25,7 @@ def Dijkstra(graph, start):
     
     # creating a priority queue
     pqueue = [(0, start)]
+    heapq.heapify(pqueue)
     
     # this while will run till there is some node to process 
     while len(pqueue) > 0:
