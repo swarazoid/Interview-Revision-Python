@@ -21,15 +21,15 @@ class Triangle(ShapeInterface):
         print("Draw a Triangle")
 
 class ShapeFactory():
-    def get_shape_based_on_sides(self, no_of_sides):
+    @staticmethod
+    def get_shape_based_on_sides(no_of_sides):
         if no_of_sides == 0:
             return Circle()
         elif no_of_sides == 3:
             return Triangle()
 
 if __name__ == "__main__":
-    shape_factory = ShapeFactory()
-    triangle = shape_factory.get_shape_based_on_sides(3)
+    triangle = ShapeFactory.get_shape_based_on_sides(3)
     triangle.draw()
-    circle = shape_factory.get_shape_based_on_sides(0)
+    circle = ShapeFactory.get_shape_based_on_sides(0)
     circle.draw()

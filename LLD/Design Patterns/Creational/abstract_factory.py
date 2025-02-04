@@ -15,7 +15,7 @@ from abc import ABC, abstractmethod
 
 class Furniture(ABC):
     @abstractmethod
-    def get_cost():
+    def get_cost(self):
         pass
 
 class AntiqueChair(Furniture):
@@ -36,7 +36,7 @@ class ModernTable(Furniture):
     
 class ThemedFurnituresInterface(ABC):
     @abstractmethod
-    def get_furniture(self, furniture):
+    def get_furniture(furniture):
         pass
 
 class AntiqueFurntures(ThemedFurnituresInterface):
