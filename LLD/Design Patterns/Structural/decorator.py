@@ -40,7 +40,7 @@ class ToppingsInterface(BasePizzaInterface):
 
 class CheeseTopping(ToppingsInterface):
     def __init__(self, pizza):
-        super().__init__(pizza)
+        self.pizza = pizza
         self.cost = 15
     
     def calc_cost(self):
@@ -48,7 +48,7 @@ class CheeseTopping(ToppingsInterface):
     
 class OnionTopping(ToppingsInterface):
     def __init__(self, pizza):
-        super().__init__(pizza)
+        self.pizza = pizza
         self.cost = 10
     
     def calc_cost(self):

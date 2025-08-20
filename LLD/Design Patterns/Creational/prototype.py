@@ -1,5 +1,5 @@
 """
-Use case: Assume we have a class where the constructor is very expensive to run, example it might make many network requests. And now we wan tto have many similar objects, with just minor changes. We might not want to create all objects from scratch everytime as I said, the constructor is very expensive to run. So what we do? We clone the existing object.
+Use case: Assume we have a class where the constructor is very expensive to run, example it might make many network requests. And now we want to have many similar objects, with just minor changes. We might not want to create all objects from scratch everytime as I said, the constructor is very expensive to run. So what we do? We clone the existing object.
 
 But if we simply try to copy, we can get into problems like:
 - not able to access private attributes and methods.
